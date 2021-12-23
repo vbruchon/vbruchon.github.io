@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>La fabrique Givrée</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="p-3 bg-primary d-flex justify-content-between">
+    <div id="logo"><img class="w-75" src="image/logo.png" alt="Logo"></div>
+    <div id="navbarre">
+      <nav class="navbar navbar-expand-lg navbar-light h-25 translate-middle-y mt-5 ">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-success" aria-current="page" href="index.html">Accueil</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-success" id="navbarDropdown" href="equipe.html" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">Equipe</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="equipe.html">Notre Equipe</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="CV_Laetitia.html">Laetitia</a></li>
+                  <li><a class="dropdown-item" href="CV_Marie_Demeter.html">Marie-Déméter</a></li>
+                  <li><a class="dropdown-item" href="CV_Vivian.html">Vivian</a></li>
+                </ul>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-success" id="navbarDropdown1" href="catalogue.html"
+                  role="button" data-bs-toggle="dropdown" aria-expanded="false">Nos Produits</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <li><a class="dropdown-item" href="catalogue.html">Notre Catalogue</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="produit1.html">Produit 1</a></li>
+                  <li><a class="dropdown-item" href="produit2.html">Produit 2</a></li>
+                  <li><a class="dropdown-item" href="produit3.html">Produit 3</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-success" aria-current="page" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!------>
+
+
+  <!-------------Corps--------------------->
+  <div class="bg-primary pb-3">
+    <div class="container ">
+      <div class="row text-center">
+
+        <h2 class="text-secondary text-uppercase">Pour nous contacter c'est par ici !</h2>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-success">
+  <div class="container pb-2 ">
+    <div class="row pt-3">
+      <form action="https://httpbin.org/post" method="post" class="row g-3">
+
+
+        <div class="col">
+          <label for="inputNom" class="form-label">Nom</label>
+          <input type="text" class="form-control" id="inputNom" placeholder="Votre nom" aria-label="First name">
+        </div>
+        <div class="col">
+          <label for="inputPrénom" class="form-label">Prénom</label>
+          <input type="text" class="form-control" id="inputPrénom" placeholder="Votre prénom" aria-label="Last name">
+        </div>
+
+
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="Votre mail">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Adresse</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="24 rue...">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label">Complément d'adresse</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Numéro d'appartement...">
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">Ville</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Code postal</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Pays</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choisir...</option>
+            <option>France</option>
+            <option>Allemagne</option>
+            <option>Suisse</option>
+            <option>Belgique</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Texte</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+            placeholder="Votre texte ici"></textarea>
+        </div>
+
+        <div class="col-12">
+          <button type="submit" class="btn btn-secondary">Sign in</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+  <!---------------------------------------------------------->
+
+
+  <footer class="bg-primary py-2 container-fluid">
+    <div class=" d-flex flex-md-row justify-content-md-between flex-column align-items-center">
+      <div class="d-flex flex-column align-items-center text-center py-3 text-success w-50">
+        <a class="text-success text-decoration-none" href="accueil.html">Accueil</a>
+        <a class="text-success text-decoration-none" href="equipe.html">Equipe</a>
+        <a class="text-success text-decoration-none" href="catalogue.html">Nos produits</a>
+        <a class="text-success text-decoration-none" href="contact.html">Contact</a>
+      </div>
+      <div class="bg-success d-flex flex-column align-items-center text-center p-3 m-3 w-50">
+        <p class="text-secondary text-uppercase">Nous Contacter</p>
+        <p class="text-primary">06 10 20 30 40</p>
+        <a class="text-primary text-decoration-none"
+          href="mailto:email@email.fr">email@email.fr</a>
+      </div>
+      <div class="row justify-content-center py-3 w-50">
+        <a class="col-6 col-lg-4 d-flex justify-content-center" href="https://fr.linkedin.com/"><img
+            src="image/linkedin.png" alt="Lien Linkedin" class="w-50"></a>
+        <a class="col-6 col-lg-4 d-flex justify-content-center" href="https://www.instagram.com/?hl=fr"><img
+            src="image/instagram.png" alt="Lien Instagram" class="w-50"></a>
+        <a class="col-6 col-lg-4 d-flex justify-content-center" href="https://twitter.com/?lang=fr"><img
+            src="image/twitter.png" alt="Lien Twitter" class="w-50"></a>
+      </div>
+    </div>
+    <div>
+      <a class="px-3 text-success text-decoration-none" href="Mentions_legales.html">@2021 - Mentions Légales</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
